@@ -1,0 +1,159 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 80%;
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+}
+
+header{
+  color: #000000;
+  min-height: 120px;
+  border: black 3px solid;
+  overflow: auto;
+}
+
+
+
+#profile-pic{
+  float: left;
+  margin: 20px auto 20px 20px;
+}
+
+#profile-pic img{
+  width: 120px;
+  height: 120px;
+}
+
+#branding{
+  float: right;
+  margin: 20px auto 20px 20px;
+  border: black 1px solid;
+  height: 120px;
+}
+
+#profile-name{
+  color:#000000;
+  font-size: 50px;
+  border: black 1px solid;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+#profile-profession{
+  color:#000000;
+  font-size: 30px;
+  text-align: right;
+  border: black 1px solid;
+  text-transform: uppercase;
+}
+
+nav{
+  background: pink;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin-top: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+nav ul li{
+  flex:1;
+  text-align: center;
+  display: inline;
+  padding: 0 20px 0 0px;
+}
+
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.showcase{
+  display: flex;
+  margin-top: 20px;
+  padding: 15% 0;
+  min-height: 300px;
+  max-height: 417px;
+  background:  #000000 url(../img/pink-wooden.jpg) repeat-x right top;
+}
+
+.showcase .showcase-text-items{
+  color: #000000;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.showcase-text-items h2{
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+
+#featured-work{
+  margin: 20px auto 0 auto;
+  border: black 1px solid;
+  padding: 0;
+}
+
+.boxes{
+  width: 80%;
+  margin: 20px auto 0 auto;
+  align-items: flex-start;
+  border: black 1px solid;
+
+}
+
+.box{
+  border: black 1px solid;
+  text-align: center;
+  padding: 10px;
+  flex-basis: 30%;
+  box-sizing: border-box;
+
+}
+
+.box img{
+  width: 90px;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color:#ffffff;
+  background-color: pink;
+  text-align: center;
+}
+
+
+@media (min-width: 900px){
+  .boxes{
+    display: flex;
+    justify-content: space-between;
+  }
+}
